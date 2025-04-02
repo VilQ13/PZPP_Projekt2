@@ -104,4 +104,4 @@
   - Autoryzacja: JWT
 
 ### 6. Przykładowy wygląd aplikacji
-![Projekt - tymczasowy wygląd](/"Projekt TEMP.png")
+<img src="./Projekt TEMP.png">
