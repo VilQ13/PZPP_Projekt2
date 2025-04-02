@@ -1,9 +1,13 @@
 System Zarządzania Dokumentami i Organizacją Pracy
 
 1. Wstęp
-  System zarządzania dokumentami i organizacją pracy dla firm, który umożliwia przetwarzanie dokumentów Word/Excel, organizowanie zadań i projektów oraz zarządzanie bazą danych. System działa na backendzie opartym na C#, zapewniając centralizację procesów biurowych i usprawnienie zarządzania dokumentacją.
+  System zarządzania dokumentami i organizacją pracy dla firm,
+  który umożliwia przetwarzanie dokumentów Word/Excel,
+  organizowanie zadań i projektów oraz zarządzanie bazą danych.
+  System działa na backendzie opartym na C#, zapewniając centralizację
+  procesów biurowych i usprawnienie zarządzania dokumentacją.
 
-2. Wymagania systemowe
+3. Wymagania systemowe
   2.1. Wymagania funkcjonalne
     - Centralizacja zarządzania dokumentami i zadaniami (wszystko w jednym miejscu)
     - Edycja dokumentów i zarządzanie tabelami w stylu Word + Excel
