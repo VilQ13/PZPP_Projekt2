@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspose.PDF" Version="25.5.0" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
+    <PackageReference Include="Microsoft.SqlServer.Server" Version="1.0.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.9.2" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.9.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\auth\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\bullet-list.png" />
+    <None Include="wwwroot\images\calendar.png" />
+    <None Include="wwwroot\images\cogwheel.png" />
+    <None Include="wwwroot\images\coins.png" />
+    <None Include="wwwroot\images\email.png" />
+    <None Include="wwwroot\images\excel.png" />
+    <None Include="wwwroot\images\exchange.png" />
+    <None Include="wwwroot\images\feather.png" />
+    <None Include="wwwroot\images\house.png" />
+    <None Include="wwwroot\images\keys.png" />
+    <None Include="wwwroot\images\link.png" />
+    <None Include="wwwroot\images\post-it.png" />
+    <None Include="wwwroot\images\quote.png" />
+    <None Include="wwwroot\images\settings.png" />
+    <None Include="wwwroot\images\tomato.png" />
+    <None Include="wwwroot\images\word.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,113 @@
+﻿
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.timer-container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+
+    .timer-container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+#timer {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+
+.controls {
+    margin: 20px 0;
+}
+
+    .controls button {
+        padding: 12px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.1s ease;
+    }
+
+        .controls button:active {
+            transform: scale(0.95);
+        }
+
+#start {
+    background-color: #28a745;
+    color: white;
+}
+
+#pause {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+#reset {
+    background-color: #dc3545;
+    color: white;
+}
+
+#start:hover {
+    background-color: #218838;
+}
+
+#pause:hover {
+    background-color: #e0a800;
+}
+
+#reset:hover {
+    background-color: #c82333;
+}
+
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+    .options select {
+        padding: 10px 14px;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f8f9fa;
+        color: #333;
+        cursor: pointer;
+        transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .options select:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+        }

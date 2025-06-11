@@ -1,0 +1,25 @@
+﻿body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#linkList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list-group-item > div > button {
+    min-width: 38px;
+}

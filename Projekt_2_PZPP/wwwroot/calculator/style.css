@@ -1,0 +1,88 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffffff; 
+}
+
+    body .container {
+        position: relative;
+        background: #000;
+        border-radius: 6px;
+        overflow: hidden;
+        z-index: 10;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    }
+
+        body .container .calculator {
+            position: relative;
+            display: grid;
+        }
+
+            body .container .calculator .value {
+                grid-column: span 4;
+                height: 140px;
+                width: 300px;
+                text-align: right;
+                border: none;
+                outline: none;
+                padding: 10px;
+                font-size: 30px;
+                background: transparent;
+                color: #fff; 
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                border-right: 1px solid rgba(255, 255, 255, 0.1);
+                resize: none;
+            }
+
+            body .container .calculator span {
+                display: grid;
+                place-items: center;
+                width: 75px;
+                height: 75px;
+                background: #000; 
+                color: #fff; 
+                font-weight: 400;
+                cursor: pointer;
+                font-size: 20px;
+                user-select: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                border-right: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+                body .container .calculator span.clear {
+                    grid-column: span 2;
+                    width: 150px;
+                }
+
+                body .container .calculator span.plus {
+                    grid-row: span 2;
+                    height: 150px;
+                }
+
+                body .container .calculator span.equal {
+                    background: #000;
+                }
+
+                body .container .calculator span:hover {
+                    background: #111; 
+                }
+
+                body .container .calculator span:active {
+                    background: #fff; 
+                    color: #000; 
+                    font-size: 24px;
+                    font-weight: 500;
+                }

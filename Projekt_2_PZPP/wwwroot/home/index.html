@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Organiser</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="sidebar">
+
+            <div style="display: flex; align-items: center; margin: 0px -30px;">
+                <img src="/images/logo.png" alt="Logo" width="110" height="80" style="margin-right: -20px;">
+                <span style="font-size: 19px; font-weight: 400; color: #fff; white-space: nowrap;">Web Organiser</span>
+            </div>
+            <ul>
+                <li>
+                    <strong>
+                        <a href="/home/index.html">
+                            <img src="/images/house.png" alt="Home" width="20" /> Home
+                        </a>
+                    </strong>
+                </li>
+                <li><a href="/word/index.html"><img src="/images/word.png" alt="Word" width="20" /> Word</a></li>
+                <li><a href="/excel/index.html"><img src="/images/excel.png" alt="Excel" width="20" /> Excel</a></li>
+                <li><a href="/calculator/index.html"><img src="/images/keys.png" alt="Calculator" width="20" /> Calculator</a></li>
+                <li><a href="/currency/index.html"><img src="/images/exchange.png" alt="Currency" width="20" /> Currency converter</a></li>
+                <li><a href="/calendar/index.html"><img src="/images/calendar.png" alt="Calendar" width="20" /> Calendar</a></li>
+                <li><a href="/canvas/index.html"><img src="/images/feather.png" alt="Canvas" width="20" /> Canvas</a></li>
+                <li><a href="/todo/index.html"><img src="/images/bullet-list.png" alt="To-do list" width="20" /> To-do list</a></li>
+                <li><a href="/stickynote/index.html"><img src="/images/post-it.png" alt="Sticky Note" width="20" /> Sticky Note</a></li>
+                <li><a href="/timer/index.html"><img src="/images/tomato.png" alt="Timer" width="20" /> Timer</a></li>
+                <li><a href="/link-manager/index.html"><img src="/images/link.png" alt="Link manager" width="20" /> Link manager</a></li>
+                <li><a href="/random-quote/index.html"><img src="/images/quote.png" alt="Quote" width="20" /> Quote of the day</a></li>
+                <div class="sidebar-date" id="sidebarDate"></div>
+
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>Welcome!</h1>
+            <p>Wanna get started?</p>
+
+
+            <div class="dashboard-grid">
+                <div id="componentCalculator" class="component-tile">
+                    <h3>Calculator</h3>
+                    <iframe src="/calculator/index.html" width="100%" height="150" style="border:none;"></iframe>
+                </div>
+                <div id="componentCurrency" class="component-tile">
+                    <h3>Currency Converter</h3>
+                    <iframe src="/currency/index.html" width="100%" height="150" style="border:none;"></iframe>
+                </div>
+                <div id="componentQuote" class="component-tile">
+                    <h3>Quote of the Day</h3>
+                    <iframe src="/random-quote/index.html" width="100%" height="100" style="border:none;"></iframe>
+                </div>
+                <div id="componentTodo" class="component-tile">
+                    <h3>To-do List</h3>
+                    <iframe src="/todo/index.html" width="100%" height="150" style="border:none;"></iframe>
+                </div>
+                <div id="componentTimer" class="component-tile">
+                    <h3>Timer</h3>
+                    <iframe src="/timer/index.html" width="100%" height="100" style="border:none;"></iframe>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="user-menu">
+        <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="User Icon" class="user-icon" id="userIcon" />
+        <div class="dropdown" id="dropdownMenu">
+            <div class="dropdown-section">
+                <strong>Settings</strong><br>
+                <div class="toggle-item" data-target="componentCalculator">
+                    <img src="/images/keys.png" alt="Calculator" width="16"> Calculator
+                </div>
+                <div class="toggle-item" data-target="componentCurrency">
+                    <img src="/images/exchange.png" alt="Currency" width="16"> Currency
+                </div>
+                <div class="toggle-item" data-target="componentQuote">
+                    <img src="/images/quote.png" alt="Quote" width="16"> Quote
+                </div>
+                <div class="toggle-item" data-target="componentTodo">
+                    <img src="/images/bullet-list.png" alt="Todo" width="16"> To-do
+                </div>
+                <div class="toggle-item" data-target="componentTimer">
+                    <img src="/images/tomato.png" alt="Timer" width="16"> Timer
+                </div>
+            </div>
+
+
+            <hr>
+            <button id="logoutBtn">Exit</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
